@@ -9,6 +9,10 @@ public class TextController : MonoBehaviour {
     InputField textField;
     [SerializeField]
     HeroController hero;
+    [SerializeField]
+    Text StoryText;
+    [SerializeField]
+    ScreenManager screenManager;
 
     string text;
     Dictionary<string, GameText.Commands> CommandDictionary;
@@ -45,7 +49,23 @@ public class TextController : MonoBehaviour {
 
         if (CommandDictionary.TryGetValue(text.ToLower(), out toSend))
         {
-            hero.ExecuteCommand(toSend);
+            if (screenManager.levelCounter < 8)
+                hero.ExecuteCommand(toSend);
+        }
+        else
+        {
+            if (text.ToLower() == "help")
+            {
+                StoryText.text = GameText.Instance.GetHelp();
+            }
+            else if (text.ToLower() == "story")
+            {
+                screenManager.UpdateStory();
+            }
+            else if (text.ToLower() == "kill")
+            {
+                screenManager.ShowEnd();
+            }
         }
 
         CleanField();

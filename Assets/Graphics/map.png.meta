@@ -6,6 +6,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: map_0
     21300002: map_1
+    21300004: map_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -129,8 +130,22 @@ TextureImporter:
       name: map_1
       rect:
         serializedVersion: 2
+        x: 0
+        y: 1232
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: map_2
+      rect:
+        serializedVersion: 2
         x: 24
-        y: 1256
+        y: 1232
         width: 24
         height: 24
       alignment: 0
