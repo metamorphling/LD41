@@ -5464,6 +5464,11 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114036332317126598, guid: e694cb7f149b79046a28a160c2bd3a21,
+        type: 2}
+      propertyPath: jumpHeight
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e694cb7f149b79046a28a160c2bd3a21, type: 2}
   m_IsPrefabParent: 0
@@ -5650,6 +5655,26 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 510326413}
+    - target: {fileID: 114987568935434866, guid: 4a1a2999255cd4745b31f67b8de4f8cf,
+        type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987568935434866, guid: 4a1a2999255cd4745b31f67b8de4f8cf,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 576
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987568935434866, guid: 4a1a2999255cd4745b31f67b8de4f8cf,
+        type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987568935434866, guid: 4a1a2999255cd4745b31f67b8de4f8cf,
+        type: 2}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a1a2999255cd4745b31f67b8de4f8cf, type: 2}
   m_IsPrefabParent: 0

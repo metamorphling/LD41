@@ -120,7 +120,10 @@ public class HeroController : MonoBehaviour {
             anim.SetBool("isMoving", false);
             isMoving = false;
         }
+	}
 
+    private void FixedUpdate()
+    {
         if (rb.velocity.y > 0)
         {
             timeInAir += Time.deltaTime;
@@ -137,11 +140,6 @@ public class HeroController : MonoBehaviour {
             }
             doJump = -1f;
         }
-
-	}
-
-    private void FixedUpdate()
-    {
         rb.velocity = new Vector2(moveDirection * moveSpeed, doJump * jumpSpeed);
     }
 

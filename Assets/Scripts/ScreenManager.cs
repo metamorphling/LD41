@@ -42,6 +42,7 @@ public class ScreenManager : MonoBehaviour {
     }
 
     void Start () {
+        Screen.SetResolution(1024, 576, false);
         hc = hero.GetComponent<HeroController>();
         overlayImage = Overlay.GetComponent<Image>();
         overlayText = Overlay.GetComponentInChildren<Text>();
@@ -84,7 +85,7 @@ public class ScreenManager : MonoBehaviour {
         StartCoroutine("waitUntilEnd", 1f);
         hc.PlaySound(HeroController.AudioType.end);
         screenControl.VibrateForTime(1f);
-        overlayText.fontSize = 1;
+        overlayText.fontSize = 20;
         overlayText.text = GameText.Instance.GetEndEnd();
         overlayText.color = Color.black;
         overlayImage.color = Color.red;
